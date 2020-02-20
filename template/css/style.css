@@ -1,0 +1,269 @@
+/*
+
+File Name: style.less
+Date: 05/28/19
+Programmer: Gray Mros
+
+*/
+/* MOBILE STYLESHEET */
+/* Color Palette #3961 color palette from https://colorpalettes.net/color-palette-3961/ */
+/* Parametric mixin for headings */
+/* End parametric mixin for headings */
+/* Mixins created for final site project */
+body header {
+  text-align: center;
+}
+body header h1 {
+  background-color: #1e5ca3b0;
+  font-size: 3rem;
+  width: 100%;
+  padding: 3rem;
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+  color: #ffffff;
+}
+body header h1 span {
+  display: block;
+}
+body header nav {
+  overflow: hidden;
+  position: relative;
+  padding-top: 3rem;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #a4c1e21c;
+}
+body header nav a {
+  text-align: center;
+}
+body header nav a i {
+  background-color: rgba(49, 93, 144, 0.69019608);
+  color: #ffffff;
+  border-radius: 2rem;
+  padding: 1.7rem 2.3rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+body header nav div {
+  display: none;
+  background-color: #1f033118;
+  padding: 1rem 0 2rem 0;
+}
+body header nav div a {
+  color: #ffffff;
+  background-color: #1e5ca3b0;
+  padding: 2rem 1rem;
+  text-decoration: underline;
+  font-size: 1rem;
+  display: block;
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 1rem auto 0.1rem auto;
+  border-radius: 1rem;
+}
+body header nav div a:hover {
+  background-color: #d41b15b7;
+}
+body header nav div a.active {
+  color: #ffffff;
+  background-color: #d41b15b7;
+}
+body main section {
+  background-color: #a4c1e21c;
+  border-bottom: 2px solid #757575af;
+  text-align: center;
+  padding-top: 2rem;
+}
+body main section h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  color: #d41b15b7;
+}
+body main section div {
+  padding: 1rem;
+}
+body main section div h3 {
+  font-size: 1.4rem;
+  padding: 3rem 0 1rem 0;
+  font-family: 'Roboto Slab', serif;
+}
+body main section div ul li {
+  padding: 1rem;
+}
+body main section div p {
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+body main section div p:nth-of-type(2) {
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+body main aside {
+  background-color: #1f033118;
+  text-align: center;
+  padding-top: 2rem;
+}
+body main aside h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  color: #d41b15b7;
+}
+body main aside div {
+  padding: 1rem;
+}
+body main aside div h3 {
+  font-size: 1.4rem;
+  padding: 3rem 0 1rem 0;
+  font-family: 'Roboto Slab', serif;
+}
+body main aside div ul li {
+  padding: 1rem;
+}
+body main aside div p {
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+body main aside div p:nth-of-type(2) {
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+body footer {
+  background-color: #1e5ca3b0;
+  text-align: center;
+}
+body footer p {
+  color: #ffffff;
+  padding: 3rem 0 0.7rem 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  font-style: italic;
+}
+/*
+
+TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+@media only screen and (min-width: 767px) {
+  body {
+    width: 85%;
+    margin: 0 auto;
+  }
+  body header h1 {
+    padding-top: 8rem;
+  }
+  body header h1 span {
+    display: block;
+  }
+  body header nav {
+    padding-bottom: 0.6rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  body header nav a {
+    display: none;
+  }
+  body header nav a i {
+    background-color: #757575af;
+    padding: 1rem;
+  }
+  body header nav div {
+    display: block;
+    background-color: transparent;
+  }
+  body header nav div a {
+    padding: 1rem;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: inline-block;
+    width: fit-content;
+  }
+}
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+@media only screen and (min-width: 1025px) {
+  body {
+    max-width: 1300px;
+  }
+  body main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto auto;
+  }
+  body main section {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  body main section div {
+    display: grid;
+    grid-template-columns: 4% 1fr 1fr 1fr 4%;
+    grid-template-rows: auto;
+    grid-row-gap: 4rem;
+    grid-column-gap: 1rem;
+  }
+  body main section div h3 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    padding-top: 3rem;
+  }
+  body main section div ul {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  body main section div p {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  body main section div p:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  body main section:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  body main section:nth-of-type(3) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-bottom: none;
+  }
+  body main aside {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: auto;
+  }
+  body main aside div h3 {
+    padding-top: 3rem;
+  }
+  body footer p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+}
