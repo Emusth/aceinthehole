@@ -58,7 +58,6 @@ body header nav div a {
   background-color: #1e5ca3b0;
   padding: 2rem 1rem;
   text-decoration: underline;
-  font-size: 1rem;
   display: block;
   font-size: 1.5rem;
   width: 80%;
@@ -181,12 +180,13 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     background-color: transparent;
   }
   body header nav div a {
-    padding: 1rem;
+    border-radius: 1rem;
+    padding: 1rem 0;
     margin: 0 auto;
     text-decoration: none;
     font-size: 1.3rem;
     display: inline-block;
-    width: fit-content;
+    width: 22%;
   }
 }
 /*
