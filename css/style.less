@@ -1,0 +1,581 @@
+/*
+
+File Name: style.less
+Date: 3/5/19
+Programmer: Gray Mros
+
+*/
+
+/*
+Google Font choices
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/*
+Colors:
+#ffffff - White
+#000000 - Black
+#ff0000 - Red
+
+Secondary Color:
+#f5f5f5; - Light Grey
+
+*/
+
+/* MOBILE STYLESHEET */
+
+@import 'palette.less';
+@import 'font.less';
+@import 'hamburger.less';
+@import 'slideshow.less';
+@import 'specific-section.less';
+@import 'forms.less';
+@import 'grid.less';
+
+/* Global */
+html,
+body {
+  .fontSans;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+// Elements with .tablet-desktop hidden in mobile view
+.tablet-desktop {
+  display: none;
+}
+
+// Elements with .desktop class are hidden in mobile and tablet view
+.desktop {
+  display: none;
+}
+
+
+/* Header */
+header {
+  height: 50vh;
+}
+
+//Header Logo
+h1 {
+  background-image: url(../images/AITHME_red_and_white_on_transparent_Impact.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  height: 25vh;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 24rem;
+  position: absolute;
+}
+
+// Navbar style in the hamburger.less file
+
+/* End header */
+
+
+/* Section */
+section {
+  font-size: 1.3rem;
+}
+
+// H2 headers
+h2 {
+  .fontSerif;
+  font-size: 1.7rem;
+  text-align: left;
+  padding: 1rem;
+  padding-right: 2rem;
+  color: @color3;
+  font-weight: bold;
+  border-bottom: 1px solid @color2;
+}
+
+// H3 headers
+h3 {
+  .fontSerif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem .8rem 1.5rem 0;
+  text-decoration: underline;
+}
+
+// H4 headers
+h4 {
+  font-size: 1.1rem;
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+
+// H5 headers
+section {
+  h5 {
+    font-size: 1.3rem;
+    padding: 2rem 0 .5rem 0;
+    font-weight: 600;
+    letter-spacing: .02rem;
+    text-align: center;
+  }
+}
+
+// Unordered lists
+section {
+  ul {
+    padding: 1rem 1rem;
+    margin: 1rem;
+    background-color: @color4;
+    border-radius: 1rem;
+  }
+}
+
+// List items
+section {
+  li {
+    padding-bottom: 2rem;
+  }
+}
+
+// Paragraphs
+section {
+  p {
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+    line-height: 1.6rem;
+    letter-spacing: .01rem;
+  }
+}
+
+// Paragraphs specifically in unordered lists
+section {
+  ul {
+    p {
+      padding: 0;
+    }
+  }
+}
+
+/* End section */
+
+
+/* Aside */
+
+//Tertiary headings, but in asides
+aside {
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem .8rem 0rem 1rem;
+    text-decoration: underline;
+  }
+}
+
+.tablet-desktop {
+  display: none;
+}
+
+/* End aside */
+
+
+/* Footer */
+footer {
+  background-color: @color3;
+}
+
+// Copyright
+footer {
+  p {
+    text-align: center;
+    padding-bottom: .3rem;
+    font-size: .9rem;
+    color: @color1;
+  }
+}
+
+// Footer navigation
+footer {
+  nav {
+    ul {
+      margin-top: .1rem;
+    }
+  }
+}
+
+// Footer navigation
+footer {
+  nav {
+    ul {
+      display: block;
+      padding: 1rem;
+      position: relative;
+
+      li {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// Footer navigation
+footer {
+  a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: block;
+    text-align: left;
+    color: @color1;
+  }
+}
+
+/* End footer */
+
+
+/*
+***************************************************************************************************************
+***************************************************************************************************************
+***************************************************************************************************************
+***************************************************************************************************************
+*/
+
+// Tablet media query
+
+@media only screen and (min-width: 767px) {
+
+
+  // Additional style for devices over 767px are in grid.less, hamburger.less and specific-section.less
+
+  // Header Logo
+  header {
+    h1 {
+      height: 20vh;
+    }
+  }
+
+  /* Section */
+
+  // H2 headers
+  h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  // H3 headers
+  h3 {
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
+
+
+  // H4 headers
+  h4 {
+    font-size: 1.1rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+  }
+
+  // H5 headers
+  section {
+    h5 {
+      font-size: 1.3rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      font-weight: 600;
+      letter-spacing: .02rem;
+      text-align: center;
+    }
+  }
+
+  // Unordered lists
+  section {
+    ul {
+      width: 90%;
+      padding: 1rem 1rem 2rem 1rem;
+      margin: 1rem auto;
+    }
+  }
+
+  // List items
+  section {
+    li {
+      padding-bottom: 2rem;
+    }
+  }
+
+  // Paragraphs
+  section {
+    p {
+      text-align: left;
+      font-size: 1.1rem;
+      padding: 1rem 1rem;
+      line-height: 1.4rem;
+      letter-spacing: .01rem;
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+  // Paragraphs specifically in unordered lists
+  section {
+    ul {
+      p {
+        padding: 0;
+      }
+    }
+  }
+
+  // Generic Divs
+  section {
+    div {
+      margin: 0 auto;
+    }
+  }
+
+  /* End section */
+
+
+  /* Aside */
+  aside {
+    background-color: @color1;
+    overflow: hidden;
+  }
+
+
+
+  //Tertiary headings, but in asides
+  aside {
+    h3 {
+      padding-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  //Tablet and desktop Social media feeds
+  .tablet-desktop {
+    background-color: @color4;
+    display: block;
+  }
+
+  // Social Media
+  #facebook-feed {
+    display: block;
+    margin: 0 auto;
+  }
+
+  // Social Media
+  #twitter-feed {
+    float: left
+  }
+
+  // Mobile social media feed hidden in tablet and desktop
+  .mobile {
+    display: none;
+  }
+
+  /* End aside */
+
+
+
+  /* Footer */
+  footer {
+    nav {
+      a {
+        text-align: center;
+      }
+    }
+  }
+}
+
+// End of tablet media query
+
+/*
+***************************************************************************************************************
+***************************************************************************************************************
+***************************************************************************************************************
+***************************************************************************************************************
+*/
+
+//Desktop media query
+
+@media only screen and (min-width: 1023px) {
+
+  // Main background color
+  main {
+    background-color: @color4;
+  }
+
+  // Narrow the main content of each page in desktop view
+  main>section,
+  main>div,
+  main>aside {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  // Borders around main sections
+  main>section {
+    border-left: .15rem solid @color3;
+    border-right: .05rem solid @color3;
+  }
+
+  // Border around asides and sections that are located on the right
+  main>section>aside,
+  main>section>section:nth-of-type(2) {
+    border-top: 72px solid @color1;
+  }
+
+  // Borders separating sections in the Rules and FAQs page
+  #rules>section:nth-of-type(2),
+  #rules>section:nth-of-type(3) {
+    border-top: .1rem dashed @color3;
+  }
+
+  // Header
+  header {
+    height: 45vh;
+  }
+
+  // H1
+  h1 {
+    height: 15vh;
+    padding-top: 20rem;
+  }
+
+  //This includes the desktop navbar
+  .desktop {
+    display: block;
+  }
+
+  // Desktop nav bar
+  .desktop {
+    nav {
+      top: 0;
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  // Nav bar list
+  .desktop {
+    nav {
+      ul {
+        padding: 1rem 0;
+        background-color: @color1;
+        opacity: .7;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+  }
+
+  // Desktop nav links
+  .desktop {
+    nav {
+      li {
+        padding: 1rem .9rem;
+      }
+    }
+  }
+
+  // Logo homepage link
+  .desktop {
+    nav {
+      li:nth-of-type(1) {
+        left: .1rem;
+        top: 1.2rem;
+        position: absolute;
+        width: 20%;
+        padding-top: 0;
+
+        a {
+          img {
+            height: auto;
+            max-width: 100%;
+            position: absolute;
+          }
+        }
+
+      }
+    }
+  }
+
+  // Deskop nav anchor elements
+  .desktop {
+    nav {
+      a {
+        font-size: 1.5rem;
+        color: @color3;
+        font-weight: 600;
+        text-align: center;
+
+        &:active {
+          font-weight: bold;
+          font-style: italic;
+          border-top: 1px solid @color3;
+        }
+
+        &:hover {
+          color: @color2;
+          font-weight: bold;
+          border-top: 1px solid @color2;
+        }
+      }
+    }
+  }
+
+  // H2 heading
+  h2 {
+    font-size: 2.5rem;
+    border-bottom: none;
+  }
+
+  // H3 heading
+  section {
+    h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      clear: both;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  // Paragraphs
+  section {
+    p {
+      font-size: 1.1rem;
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+
+  // Unordered lists
+  section {
+    ul {
+      padding: 1rem 1rem;
+      margin: 1rem auto;
+      background-color: @color1;
+      border-radius: 0;
+    }
+  }
+
+  // Form background color
+  section {
+    form {
+      background-color: @color1;
+    }
+  }
+
+  // Aside 
+  aside {
+    background-color: @color1;
+  }
+}

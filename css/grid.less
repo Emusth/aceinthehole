@@ -1,0 +1,269 @@
+// out: null
+
+@media only screen and (min-width: 767px) {
+
+    //Homepage
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 225px;
+    }
+
+    #home-section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .home-grid {
+        aside {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    }
+
+    //Courses page
+    #courses {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: auto;
+    }
+
+    #courses {
+        section {
+            &:nth-of-type(1) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+        }
+    }
+
+    #courses {
+        section {
+            &:nth-of-type(2) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }
+    }
+
+    #courses {
+        section {
+            &:nth-of-type(3) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+        }
+    }
+
+    //Register page 
+    #register {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-rows: auto;
+    }
+
+    #register {
+        section {
+            &:nth-of-type(1) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+        }
+    }
+
+    #register {
+        section {
+            &:nth-of-type(2) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }
+    }
+
+    #register {
+        section {
+            &:nth-of-type(3) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+        }
+    }
+
+    //Contact page 
+    #contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-rows: 800px;
+    }
+
+    #contact-grid {
+        #contact-section {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    }
+
+    #contact-grid {
+        aside {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    }
+}
+
+
+// End of tablet media query
+
+/*
+***************************************************************************************************************
+***************************************************************************************************************
+***************************************************************************************************************
+***************************************************************************************************************
+*/
+
+//Desktop media query
+
+@media only screen and (min-width: 1023px) {
+
+    //Homepage
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 225px;
+    }
+
+    #home-section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-right: .05rem solid @color3;
+    }
+
+    .home-grid {
+        aside {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    }
+
+    //Courses page
+    #courses {
+        display: grid;
+        grid-template-columns: 1fr 225px;
+        grid-template-rows: auto;
+    }
+
+    #courses {
+        section {
+            &:nth-of-type(1) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 4;
+                border-right: .05rem solid @color3;
+            }
+        }
+    }
+
+    #courses {
+        section {
+            &:nth-of-type(2) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }
+    }
+
+    #courses {
+        section {
+            &:nth-of-type(3) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+        }
+    }
+
+    //Register page 
+    #register {
+        display: grid;
+        grid-template-columns: 1fr 225px;
+        grid-template-rows: auto;
+    }
+
+    #register {
+        section {
+            &:nth-of-type(1) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 4;
+                border-right: .05rem solid @color3;
+            }
+        }
+    }
+
+    #register {
+        section {
+            &:nth-of-type(2) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }
+    }
+
+    #register {
+        section {
+            &:nth-of-type(3) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+        }
+    }
+
+    //Contact page 
+    #contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 225px;
+        grid-template-rows: 900px;
+    }
+
+    #contact-grid {
+        #contact-section {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border-right: .05rem solid @color3;
+        }
+    }
+
+    #contact-grid {
+        aside {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    }
+}

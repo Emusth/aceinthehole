@@ -1,0 +1,183 @@
+// out: null
+@import 'palette.less';
+
+//Packet pick up on registration page
+#register {
+    ul:not(:last-of-type) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+}
+
+//contact page section tag
+#contact-section {
+    padding-bottom: 1rem;
+}
+
+//form style
+section {
+    form {
+        background-color: @color4;
+        color: @color3;
+        margin: 0 1rem 0 1rem;
+        border-radius: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+#register {
+    form {
+        p {
+            text-align: center;
+            padding: 2rem 0 1rem 0;
+            margin: 0 auto;
+        }
+    }
+}
+
+//label style
+section {
+    label {
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+        padding-top: 2rem;
+        padding-bottom: .5rem;
+    }
+}
+
+//input style
+section {
+    input {
+        display: block;
+        margin: 1rem auto .5rem auto;
+        width: 85%;
+        font-size: 2rem;
+    }
+}
+
+//input style for the submit buttons (last of the inputs)
+section {
+    input {
+        &:last-of-type {
+            margin-bottom: 1rem;
+            border-radius: .5rem;
+            color: @color2;
+            background-color: @color1;
+            border: 3px solid @color2;
+            width: 60%;
+            font-weight: bold;
+        }
+    }
+}
+
+//select style
+section {
+    select {
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+        padding-bottom: .5rem;
+        padding-top: 1rem;
+    }
+}
+
+//option style
+section {
+    option {
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+}
+
+//textarea style
+section {
+    textarea {
+        display: block;
+        margin: 0 auto 1rem auto;
+        width: 85%;
+        font-size: 1.3rem;
+    }
+}
+
+//Return buttons on Success and Sent pages
+section {
+    li {
+        button {
+            background: transparent;
+            border: none;
+            padding: 0;
+            a {
+                width: 100%;
+                padding: 0 3rem;
+                font-size: 2rem;
+                text-decoration: none;
+                color: @color2;
+                background-color: @color1;
+                border: .1rem solid @color3;
+                border-radius: .5rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*
+***************************************************************************************************************
+***************************************************************************************************************
+***************************************************************************************************************
+***************************************************************************************************************
+*/
+
+// Tablet media query
+
+@media only screen and (min-width: 767px) {
+
+    // Form
+    section {
+        form {
+            margin: 1rem 0 1rem 0;
+            width: 100%;
+        }
+    }
+
+    // Input
+    form {
+        input {
+            width: 50%;
+            margin-top: .5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    // Select
+    form {
+        select {
+            width: 50%;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            padding: 0;
+        }
+    }
+
+    // Label
+    form {
+        label {
+            width: 50%;
+            text-align: center;
+            padding-top: .5rem;
+        }
+    }
+
+    //textarea style
+    section {
+        textarea {
+            width: 60%;
+        }
+    }
+}
